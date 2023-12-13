@@ -1,0 +1,14 @@
+public class ReverseElementOfArray
+{
+	public static void main(String args[])//main method
+	{
+		int num[]= {10,20,30,20,10,77,60};//array declaration
+	   for(int k=num.length-1;k>=0;k--)
+		{
+			System.out.println(num[k]);
+		}
+		
+		
+			
+}
+}
