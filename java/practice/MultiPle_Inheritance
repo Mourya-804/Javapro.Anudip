@@ -1,0 +1,30 @@
+interface Perimeter
+{    int length=5;
+     int breadth=6;
+     void perimeter();	//abstract method
+}
+interface Area
+{
+	void Area();//abstract method
+}
+class Rectangle implements Perimeter,Area{//implementing interface
+	int p=(length+breadth)*2;
+   int a=length*breadth;
+	public void perimeter()
+	{
+       System.out.println("perimeter of rectangle :="+p);
+	}
+	public void Area()
+	{
+	   System.out.println("Area of rectangle :="+a);
+	}
+}
+class MultipleInheritanceEg
+{
+	public static void main(String args[])
+	{
+	  Rectangle r=new Rectangle();
+	  r.perimeter();
+	  r.Area();
+	}
+}
