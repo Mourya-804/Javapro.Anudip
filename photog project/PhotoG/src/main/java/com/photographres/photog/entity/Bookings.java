@@ -1,4 +1,8 @@
+
 package com.photographres.photog.entity;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 import jakarta.persistence.Column;
 
@@ -6,6 +10,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,6 +36,10 @@ public class Bookings {
 	@NotBlank(message="Photographers name is mandotory")
 	@Column(length=50, nullable = false)
 	private String photographerName;
-	
+	@ManyToOne()
+	@JoinColumn(name="UserId", referencedColumnName = "uId")
+	@JsonBackReference
+	User user;
+
 }
 
