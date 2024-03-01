@@ -1,0 +1,46 @@
+ 
+ <h1>All Users Bookings </h1>
+ 
+ <table class="table table-striped"> 
+    <thead>
+        <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">USER NAME</th>
+            <th scope="col">User SURNAME</th>
+            <th scope="col">Email </th>
+            <th scope="col">USER PHONE NUMBER</th>
+            <!-- <th scope="col">ADDRESS</th> -->
+            <th scope="col">PASSWORD</th>
+            <!-- <th scope="col">USER ID</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of userr">
+            <td scope="col">{{i.uId}}</td>
+            <td scope="col"><input type="text" [(ngModel)]="i.uName"/></td>
+            <td scope="col"><input type="text" [(ngModel)]="i.uSurname"/></td>
+            <td scope="col"><input type="text" [(ngModel)]="i.email"/></td>
+            <td scope="col"><input type="text" [(ngModel)]="i.uPhone"/></td>
+             <!-- <td scope="col"><input type="text" [(ngModel)]="i.addr"/></td>  -->
+            <td scope="col"><input type="text" [(ngModel)]="i.password"/></td>
+            <!-- <td scope="col"> <button type="submit" class="btn btn-outline-warning" (click)="update(i.uId,i.uName,i.uSurname,i.email,i.uPhone,i.password,i.bookingList)">Update</button></td> -->
+            <td><button type="submit" class="btn btn-outline-danger" (click)="delete(i.uId)">DELETE</button></td>
+           </tr>
+
+
+        <!-- <tr>   -->
+             <!-- <td><input class="form-control" type="number"  [(ngModel)]="model1.uId"/></td>    -->
+             <!-- <td><input class="form-control" type="text"  [(ngModel)]="model1.uName"/></td>    -->
+               <!-- <td><input class="form-control" type="text"  [(ngModel)]="model1.uSurname"/></td>   -->
+             <!-- <td><input class="form-control" type="text" [(ngModel)]="model1.email"/></td>   -->
+              <!-- <td><input class="form-control" type="number"  [(ngModel)]="model1.uPhone"/></td>   -->
+                <!-- <td><input class="form-control" type="text"  [(ngModel)]="model1.addr"/></td>     -->
+             <!-- <td><input class="form-control" type="text"  [(ngModel)]="model1.password"/></td>   -->
+             
+            <!-- <td><button type="submit"     class="btn btn-outline-success"   (click)="create()"> ADD</button></td> -->
+            <!-- <td><button type="submit"     class="btn btn-outline-success"   > Next</button></td> -->
+            <td><button type="submit"     class="btn btn-outline-success"   (click)=" gotoadmineventpage()"> Next</button></td>
+            
+        <!-- </tr>  -->
+    </tbody>
+ </table> 

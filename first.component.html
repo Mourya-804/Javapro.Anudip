@@ -1,0 +1,258 @@
+
+
+<!-- </head> -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="logo">
+    Photo<span>G</span>
+</div>
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="collapsibleNavbar" class="collapse navbar-collapse">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a routerLink="/home" class="nav-link"> HOME  </a></li>
+<li class="nav-item">
+<a class="nav-link"> | ABOUT | </a>
+</li>
+
+<li class="nav-item">
+<a   [routerLink]=""(click)="gotoeventlistpage()" class="nav-link">BOOK_HERE   | </a>
+</li>
+<!-- <div class="dropdown"> 
+<button type="button" class="btn btn-dark dropdown-toggle"
+data-bs-toggle="dropdown"> GALARRY</button>
+<ul class="dropdown-menu">
+<li><a href="Bcake.html" class="dropdown-item">NATURE</a></li>
+<li><a href="wowcake.html" class="dropdown-item">BIRTHDAY</a></li>
+<li><a href="#" class="dropdown-item">WEDDING</a></li>
+</ul>
+</div>-->
+</ul>
+</div>
+</nav>
+
+
+ <header>
+        <img [src]="image1" height="600vh" width="100%"><br>
+    </header>
+
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".birthday">Birthday</li>
+                <li data-filter=".wedding">wedding</li>
+            </ul>
+        </div>
+        <div class="portfolio-item">
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image11" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image3" width="100" height="100">
+            </div>
+
+            <div class="item Birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image4" width="100" height="100">
+            </div>
+
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image2" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+
+                <img [src]="image6" width="100" height="100">
+            </div>
+
+            <div class="item Birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image7" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image8" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image9" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image10" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image11" width="100" height="100">
+            </div>
+
+            <div class="item birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image12" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image13" width="100" height="100">
+            </div>
+
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image14" width="100" height="100">
+            </div>
+
+            <div class="item birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image15" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image16" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image17" width="100" height="100">
+            </div>
+
+            <div class="item birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image18" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image19" width="100" height="100">
+            </div>
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image20" width="100" height="100">
+            </div>
+
+
+            <div class="item birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image4" width="100" height="100">
+            </div>
+
+
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image21" width="100" height="100">
+            </div>
+
+
+            <div class="item wedding" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image22" width="100" height="100">
+            </div>
+
+
+
+            <div class="item birthday" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image20" width="100" height="100">
+            </div>
+
+            <div class="item nature" data-aos="zoom-in" data-aos="fade-left">
+                <img [src]="image20" width="100" height="100">
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="
+sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous
+"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+            // options
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+        $('.portfolio-menu ul li').click(function () {
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter: selector
+            });
+            return false;
+        });
+    </script>
+
+    <br>
+    <br>
+
+
+
+
+
+    <section class="member">
+        <div class="member-info" data-aos="zoom-in" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100"></div>
+            <br>
+            <hr>
+            <marquee style="height: 500 ; width: 500;background: yellow;"><h1>ABOUT US</h1></marquee>
+            <hr>
+
+          <div class="container"> 
+             <h1 >
+                PhotoG is a group of team who Creates the
+                websites for photographers to elaborate
+                there careers digitally and reach to new
+                people.
+            </h1>
+            </div>
+            
+    
+        <br>
+        <br>
+
+        <section class="footer">
+               <div class="m-images" data-aos="zoom-in" data-aos="fade-left" data-aos-offset="100" data-aos-delay="200">
+                <img [src]="image2">
+                <img [src]="image7">
+                <img [src]="image3">
+                <img [src]="image8">
+                <img [src]="image4">
+                <img [src]="image9">
+           </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="
+        sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous
+        "></script>
+
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script type="text/javascript">
+        $('.portfolio-item').isotope({
+        // options
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+        });
+        $('.portfolio-menu ul li').click(function(){
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+        
+        var selector = $(this).attr('data-filter');
+        $('.portfolio-item').isotope({
+        filter:selector
+        }); 
+        return false;
+
+
+
+        });
+        </script>
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <!-- <script> -->
+        <!-- AOS.init(); -->
+        <!-- </script> -->
+        <!-- </body> -->
+        <!-- </html> -->
+    
+        

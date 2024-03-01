@@ -1,0 +1,156 @@
+<!-- <div class="container bg-warning p-3 "> -->
+<!--4 <div class="d-grid gap-3"> -->
+<!-- <form> -->
+<!-- <label>userName:</label> -->
+<!-- <input type="text" id="email" name="email" class="form-control" [(ngModel)]="model. username" required/><br><br> -->
+<!-- 3<input type="email" id="email" name="email" class="form-control" required/><br><br> -->
+<!-- <label>Password:</label> -->
+<!-- <input type="text" id="password" name="password" class="form-control" [(ngModel)]="model.password"/><br><br> -->
+<!-- 2<input type="text" id="password" name="password" class="form-control" required/><br><br> -->
+<!-- <button type="submit" class="btn btn-primary" (click)="userlogin()">USER LOGIN</button>&nbsp;&nbsp; -->
+<!-- 1<button type="submit" class="btn btn-primary" (click)="gotouserregisterpage()">USER LOGIN</button>&nbsp;&nbsp; -->
+
+<!-- <button type="submit" class="btn btn-primary " (click)="gotouserregisterpage()">USER Signup</button>&nbsp;&nbsp;  -->
+<!--3 4<button type="submit" class="btn btn-primary mb-3" (click)="adminlogin()">Admin LOgin</button>&nbsp;&nbsp;  -->
+<!-- 4<button type="submit" class="btn btn-primary mb-3" (click)="adminsignup()">USER Signup</button>&nbsp;&nbsp;  -->
+<!-- </form> -->
+<!-- </div> -->
+
+<!-- 1<table> -->
+<!-- 1<form action="#"> -->
+<!-- 1<tr><th><label> Username : </label></th> -->
+<!-- <1td><input type="email" value="" placeholder="Enter your username" required /> -->
+<!-- 1</td></tr> -->
+<!-- 1<tr><th><label> Password : </label></th> -->
+<!-- 1<td><input type="password" value="" placeholder="Enter your password" required /> -->
+<!-- 1</td></tr> -->
+<!-- 1<tr> -->
+<!-- 1<th><input type="submit"    (click)="userlogin()"/></th></tr>  -->
+<!--1 <button type="submit" class="btn btn-primary" (click)="userlogin()">USER LOGIN</button>&nbsp;&nbsp;  -->
+<!--1 </form> -->
+<!-- 1</table> -->
+<!-- <div class="container-fluid"> -->
+<!-- <div class="row justify-content-center"> -->
+<!-- <div class="col-md-6"> -->
+<!-- <h3>Login</h3> -->
+<!-- <form class="form-inline"> -->
+<!-- <label for="email">Email</label> -->
+<!-- <input [(ngModel)]="model.useremail" class="form-control" type="email" name="email" id="email"> <br> -->
+<!-- <label for="password">Password</label> -->
+<!-- <input [(ngModel)]="model.password" class="form-control" type="password" name="password" id="password"> <br> -->
+<!-- <button (click) = "userlogin()" class="btn btn-primary mx-2" type="submit">User Login</button> -->
+<!-- <button (click)="usersignup()" class="btn btn-primary mx-2" type="submit">User SignUp</button> -->
+<!-- <button class="btn btn-primary mx-2" type="submit">Admin Login</button> -->
+<!-- <button class="btn btn-primary mx-2" type="submit"></button> -->
+<!-- </form> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+<!-- <div class="container vh-100"> -->
+<!-- <div class="row justify-content-center h-100"> -->
+<!-- <div class="card my-auto shadow"> -->
+<!-- <div class="card-body px-5"> -->
+<!-- <div class="text-center"> -->
+<!-- <fa-icon [icon]="faLock" class="fa-3x"></fa-icon> -->
+<!-- </div> -->
+<!-- <div class="text-center"> -->
+<!-- <h2>Welcome</h2> -->
+<!-- </div> -->
+<!-- <p style="color: lightslategray; text-align: center;"> -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login -->
+<!-- details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+<!-- <div class="container-fluid"> -->
+<!-- <div class="row justify-content-center"> -->
+<!-- <div class="col-md-6"> -->
+<!-- <h3>Login</h3> -->
+<!-- <form class="form bg-primary opacity-25 p-2 rounded"> -->
+<!-- <label for="email">Email</label> -->
+<!-- <input [(ngModel)]="email" class="form-control" type="email" name="email" id="email"> <br> -->
+<!-- <label for="password">Password</label> -->
+<!-- <input [(ngModel)]="password" class="form-control" type="password" name="password" id="password"> <br> -->
+<!-- <button (click) = "userlogin()" class="btn btn-primary mx-2" type="submit">User Login</button> -->
+<!-- <button (click)="usersignup()" class="btn btn-primary mx-2" type="submit">User SignUp</button> -->
+<!-- <button class="btn btn-primary mx-2" type="submit">Admin Login</button> -->
+<!-- 1 <button class="btn btn-primary mx-2" type="submit"></button> -->
+<!-- </form> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="card-footer text-right"> -->
+<!-- <small><a routerLink="../forgot-password">Forgot Password</a></small> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<br>
+<br>
+<h1>GET IN TOUCH WITH US</h1>
+<div class="container-fluid">
+    <div class="container" *ngIf="isLoginVisible">
+        <form class="mx-auto bg-danger p-5"
+            style="width: 600px; margin-top: 10%; background-color: rgb(255, 238, 232) !important;">
+            <h4 class="text-center" style="font-size: 2rem !important; font-weight: 700;">Login</h4>
+            <div class="mb-3 mt-5">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password"
+                    [(ngModel)]="password">
+            </div>
+
+            <button type="submit" class="btn btn-primary form-control mt-4" style="font-weight: 500;"
+                (click)="userlogin()">Login</button>
+            <div class="form-text text-center">Not Registered yet? <a class="btn btn-link"
+                    (click)="goToRegister()">Register
+                    Here</a></div>
+            <div class="form-text text-center">For users -- <a class="btn btn-link" (click)="goToAdminLogin()">Admin Login</a>
+                </div>
+
+    </form>
+    </div>
+      
+</div>
+
+
+<div class="container" *ngIf="isRegVisible">
+    <form class="mx-auto p-5" style="width: 600px;  background-color: rgb(253, 224, 214) !important; margin-top: 2%;">
+        <h4 class="text-center" style="font-size: 2rem !important; font-weight: 700;">Register</h4>
+        <div class="mb-3 mt-5">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="uname" name="uname" [(ngModel)]="model.uName">
+        </div>
+
+        <div class="mb-3">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="usurname" name="usurname" [(ngModel)]="model.uSurname">
+        </div>
+
+        <div class="mb-3">
+            <label for="email1">Email</label>
+            <input type="text" class="form-control" id="email1" name="email1" [(ngModel)]="model.email">
+        </div>
+
+        <div class="mb-3">
+            <label for="contact1">Phone</label>
+            <input type="number" class="form-control" id="contact1" name="contact1" [(ngModel)]="model.uPhone">
+        </div>
+        
+       <div class="mb-3">
+            <label for="password1">Password</label>
+            <input type="password" class="form-control" id="password1" name="password1" [(ngModel)]="model.password">
+        </div>
+
+        <button type="submit" class="btn btn-primary form-control mt-4"
+            style="background-color: firebrick !important; font-weight: 500;" (click)="create()">Register</button>
+        <div class="form-text text-center">Already Registered? <a class="btn btn-link" (click)="goToLogin()">Login
+                Here</a>
+        </div>
+    </form>
+      
+</div>

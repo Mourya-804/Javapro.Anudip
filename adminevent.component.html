@@ -1,0 +1,26 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>EID</th>
+            <th>DESCRIPTION</th>
+            <th>EVENTS_NAME</th>
+            <th>PRICE</th>
+            <th>CLICK HERE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of E">
+        <td>{{i.eid}}</td>
+        <td><input type="text" [(ngModel)]="i.description"/></td>
+        <div [(ngModel)]="i.description"> </div>
+
+        <td><input type="text" [(ngModel)]="i.eventsName"/></td>
+        <td><input type="text" [(ngModel)]="i.price"/></td>
+        <!-- <td><button type="submit"     class="btn btn-outline-success"   (click)=" gotophotographerslistpage()"> Next</button></td> -->
+        <td><button type="submit"     class="btn btn-outline-success" (click)=" gotophotographerslistpage()" > Next</button></td>
+
+
+        </tr>
+</tbody>
+</table>

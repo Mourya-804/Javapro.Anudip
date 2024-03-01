@@ -1,0 +1,30 @@
+
+
+<h1>Photographers list</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>PHID</th>
+            <th>PHOTOGRAPHER-NAME</th>
+            <th>CONTACT-NO</th>
+            <th>CITY</th>
+            <th>AVALIABILITY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of P">
+            <td>{{i.phid}}</td>
+            <td><input type="text" [(ngModel)]="i.photographerName" /></td>
+            <td><input type="text" [(ngModel)]="i.contactNo" /></td>
+            <td><input type="text" [(ngModel)]="i.city" /></td>
+            <td><input type="text" [(ngModel)]="i.avaliability" /></td>
+            <!-- <td><button type="submit" class="btn btn-outline-success" -->
+                    <!-- (click)="gotobooking(i.photographerName)"> BOOK NOW</button></td> -->
+                    <td><button type="submit" class="btn btn-outline-success"
+                        (click)="gotobooking(i.photographerName)"> Next</button></td>
+
+                
+
+        </tr>
+    </tbody>
+</table>
